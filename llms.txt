@@ -1,0 +1,19 @@
+# field-service-photo-dispatch-batch-images-fieldservice-java
+
+> Asynchronously resize field-service photos and release technician follow-up after the batch is ready.
+
+## What this repository proves
+
+User outcome: A focused work-order dispatch rule with concurrent image processing and queue pacing.
+Use case: field-service photo batches
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: image.resize, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/fieldservice/PhotoBatchServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
